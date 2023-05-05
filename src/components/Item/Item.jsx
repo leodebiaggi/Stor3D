@@ -26,3 +26,5 @@ const Item = ({ id, name, img, price, stock }) => {
         </article>
     )
 }
+
+export default Item
