@@ -1,9 +1,24 @@
+import { useState, useEffect } from 'react'
+import { getProducts } from '../../asyncMock'
+import ItemList from '../ItemList/ItemList'
+
 const ItemListContainer = ({greeting}) =>{
+    const [products, setProducts] = useState([])
+
+    useEffect(() => {
+        getProducts()
+            .then(response => {
+                setProducts(response)
+            })
+            .catch(error => {
+                console.error(error)
+            })        
+    }, [])
+
     return (
         <div>
-            <h1 class="h1Class">{greeting}</h1>
-            <br />
-            <h6>Somos una empresa dedicada a crear figuras de Anime, Series, Superhéroes y otros diseños personalizados utilizando tecnología de impresión 3D.<br/><br/>También ofrecemos una amplia variedad de decoraciones para el hogar y eventos especiales.</h6><br/>
+            <h1>{greeting}</h1>
+            <ItemList products={products}/>
         </div>
     )
 }
