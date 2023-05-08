@@ -1,5 +1,5 @@
 ## GIF PREVIEW SITIO
-![GIF] (public\gif\GifWeb.gif)
+![GIF](public\gif\GifWeb.gif)
 
 # Getting Started with Create React App
 
