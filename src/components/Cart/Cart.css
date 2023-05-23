@@ -1,0 +1,45 @@
+.CartButton {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-top: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    width: 150px;
+    height: 40px;
+    background-color: #ffffff;
+    color: #393053;
+    border: 2px solid #393053;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .CartButton:hover {
+    background-color: #3930532c;
+    color: #ffffff;
+  }
+  
+  .CartOption {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    width: 150px;
+    height: 40px;
+    background-color: #ffffff;
+    color: #393053;
+    border: 2px solid #393053;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .CartOption:hover {
+    background-color: #3930532c;
+    color: #ffffff;
+  }
+   
