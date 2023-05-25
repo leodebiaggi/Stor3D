@@ -1,7 +1,7 @@
 import './CartItem.css';
 import React from 'react';
 
-const CartItem = ({ id, name, quantity, price, total }) => {
+const CartItem = ({ id, name, quantity, price }) => {
   return (
     <div className="CartItem">
       <div className="CartItem-info">
