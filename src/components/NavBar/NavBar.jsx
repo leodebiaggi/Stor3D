@@ -6,7 +6,7 @@ const NavBar = () => {
   return (
     <nav className="NavBar" >
       <Link to='/'>
-        <img src="./img/logoStor3D.png" alt="Logo" className="logoNav"/>
+        <img src="../img/logoStor3D.png" alt="Logo" className="logoNav"/>
       </Link>
       <div className="Categories">
       <NavLink to={'/category/anime'} className={({ isActive}) => isActive ? 'ActiveOption' : 'Option'}>Anime</NavLink>

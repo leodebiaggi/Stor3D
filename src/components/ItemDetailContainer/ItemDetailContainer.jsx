@@ -32,8 +32,8 @@ const ItemDetailContainer = () => {
 
     }, [itemId])
 
-    if (loading) {
-        return <div>Cargando...</div>
+    if (loading){
+        return <div className='LoadingClass'>Loading...</div>
     }
 
     return (

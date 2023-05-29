@@ -44,8 +44,8 @@
   margin-left: 15px;
 }
 
-.cartClass {
-  margin-top: 10px;
+.CartImg {
+  margin-top: 50%;
 }
 
 .h1Class {
@@ -68,8 +68,6 @@
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
-
-
 
 /*Estilos del Nav*/
 
@@ -184,3 +182,15 @@
   width: 270px;
   height: 246px;
 }
+
+/* Estilo Loading */
+
+.LoadingClass{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-weight: bold;
+  background-color: #968cb4;
+}
+
