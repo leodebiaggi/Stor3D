@@ -71,4 +71,23 @@
     background-color: #3930532c;
     color: #ffffff;
   }
-    
+  
+  .MessageContainer{
+    margin-top: 5%;
+  }
+  
+  .ConfirmationMessage {
+    margin-top: 10px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #393053;
+    text-align: center;
+  }
+  
+  .NumOrder{
+    margin-top: 20px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #393053;
+    text-align: center;
+  }

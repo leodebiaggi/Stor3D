@@ -103,6 +103,19 @@
   color: #7D84B2;
 }
 
+.ItemFooter {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+
+}
+
+.ButtonContainer {
+  display: flex;
+  justify-content: center;
+  background-color: #7D84B2;
+}
+
 .logoNav {
   margin-left: -25%;
   margin-top: 10%;

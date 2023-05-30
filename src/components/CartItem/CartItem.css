@@ -31,3 +31,11 @@
   color: #393053;
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
 }
+
+.CartItem button {
+  margin-right: 1rem;
+  margin-top: 15px;
+  align-content: center;
+  font-weight: bold;
+  color: tomato;
+}

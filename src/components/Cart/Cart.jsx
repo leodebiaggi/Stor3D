@@ -5,9 +5,9 @@ import CartItem from '../CartItem/CartItem'
 import { Link } from 'react-router-dom'
 
 const Cart = () => {
-    const { cart, clearCart, totalQuantity, total} = useContext(CartContext)
+    const { cart, clearCart, totalQuantity, total, removeItem } = useContext(CartContext)
 
-    if(totalQuantity === 0) {
+    if (totalQuantity === 0) {
         return (
             <div>
                 <h1>No hay items en el carrito</h1>
@@ -16,9 +16,13 @@ const Cart = () => {
         )
     }
 
+    const handleRemoveItem = (itemId) => {
+        removeItem(itemId);
+    };
+
     return (
         <div>
-            { cart.map(p => <CartItem key={p.id} {...p}/>) }
+            {cart.map(p => <CartItem key={p.id} {...p} handleRemoveItem={handleRemoveItem}/>)}
             <h3>Total: ${total}</h3>
             <Link to='/checkout' className='CartOption'>Checkout</Link>
             <br />

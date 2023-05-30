@@ -45,7 +45,14 @@ const Checkout = () => {
     }
 
     if (orderId) {
-        return <h2>Tu número de orden es: {orderId} </h2>
+      return (
+      <div className='MessageContainer'>
+        <p className="ConfirmationMessage">¡Gracias por tu compra!</p>
+        <h4 className='NumOrder'>Tu número de orden es: {orderId} </h4>        
+        <p className="ConfirmationMessage">En breve recibirás un correo de confirmación.</p>
+        <p> <img src="../img/compraOK.png" alt="Compra Realizada" /></p>
+      </div>
+      )
     }
 
     return (

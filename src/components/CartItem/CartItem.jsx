@@ -1,7 +1,7 @@
 import './CartItem.css';
 import React from 'react';
 
-const CartItem = ({ id, name, quantity, price }) => {
+const CartItem = ({ id, name, quantity, price, handleRemoveItem }) => {
   return (
     <div className="CartItem">
       <div className="CartItem-info">
@@ -19,6 +19,9 @@ const CartItem = ({ id, name, quantity, price }) => {
       <div className="CartItem-info">
         <p className="CartItem-title">Price:</p>
         <p className="CartItem-value">${price}</p>
+      </div>
+      <div>
+      <button onClick={() => handleRemoveItem(id)}>X</button>
       </div>
     </div>
   );

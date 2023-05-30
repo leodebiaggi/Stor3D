@@ -37,11 +37,15 @@ const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
                 <p className='Info'>Stock: {stock}</p>
             </section>
             <footer className='ItemFooter'>
-                {
-                    quantityAdded > 0 ? (<Link to='/cart' className='Option'>Terminar compra</Link>) :
-                        (<ItemCount initial={1} stock={stock} onAdd={handleOnAdd} />)
-                }
+                {quantityAdded > 0 ? (
+                    <Link to='/cart' className='Option'>Terminar compra</Link>
+                ) : (
+                    <ItemCount initial={1} stock={stock} onAdd={handleOnAdd} />
+                )}
             </footer>
+            <div className="ButtonContainer">
+                <Link to="/" className="Option">Ver más productos</Link>
+            </div>
 
         </article>
     )
