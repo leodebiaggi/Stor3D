@@ -56,3 +56,27 @@
   .ButtonCheckOut:hover {
     background-color: #443C68;
   }
+
+  .ButtonLogin{
+    padding: 10px 20px;
+    background-color: #18122B;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    opacity: 0.5; 
+  }
+
+  .ButtonLogin.Active {
+    opacity: 1; 
+  }
+
+  .ButtonLogin:focus{
+    display: none;
+  }
+
+  .ButtonLogin:hover {
+    background-color: #443C68;
+  }
